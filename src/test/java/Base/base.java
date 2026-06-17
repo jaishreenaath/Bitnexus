@@ -76,6 +76,9 @@ public class base {
 		return DriverManager.getDriver().findElement(By.xpath(xpath));
 	}
 
-	
+	public static void sendkey(WebElement element, String text)
+	{
+		element.sendKeys(text);
+	}
 
 }
